@@ -50,7 +50,7 @@ public class LoginController {
         if (user == null) {
             model.addAttribute("errors", Arrays.asList("Usuario no encontrado"));
             return LOGIN_PAGE;
-        } else if (!user.getPassword().equals(parameters.get("password"))) {
+        } else if (!user.checkPassword(parameters.get("password"))) {
             model.addAttribute("errors", Arrays.asList("Contraseña incorrecta"));
             return LOGIN_PAGE;
         } else {

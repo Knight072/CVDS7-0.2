@@ -51,6 +51,12 @@
 			<version>1.18.30</version>
 			<scope>compile</scope>
 		</dependency>
+
+<!--		agregado para la clase de seguridad-->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-crypto</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
